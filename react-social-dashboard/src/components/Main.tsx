@@ -4,7 +4,7 @@ import { useEffect } from "react"
 import { useDarkMode } from "../DarkModeContext"
 
 const Main = () => {
-    const { isDarkMode, toggleDarkMode } = useDarkMode();
+    const { isDarkMode } = useDarkMode();
 
     useEffect(() => {
         if (!isDarkMode) {
@@ -19,7 +19,7 @@ const Main = () => {
     }, [isDarkMode]);
 
     return (
-        <main className="px-[1.5rem] mb-[2.81rem] xl:mb-[4.688rem]">
+        <main className="px-[1.5rem] pb-[2.81rem] xl:pb-[4.688rem]">
             <div className="max-w-[1110px] mx-auto">
                 <section className="grid gap-[1.5rem] xl:gap-[1.875rem] mb-[2.875rem] grid-cols-dynamic">
                     {followersData.map((followers, index) => (
